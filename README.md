@@ -23,7 +23,7 @@ This module:
 ## 📦 What's included?
 
 - `SecureFolder.apk`
-- `KLMSAgent.apk`
+- All them Knox apps + them permissions
 - Basic `system.prop` spoofing
 - `sepolicy.rule`
 - All apps placed into `/system/priv-app` systemlessly
