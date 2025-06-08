@@ -1,0 +1,20 @@
+# Allow system_server and apps to access Knox services
+allow system_server knox_dar_data_file:dir { search read write getattr open }
+allow system_server knox_dar_data_file:file { read write open getattr }
+
+allow system_server knox_data_file:dir { search read write getattr open }
+allow system_server knox_data_file:file { read write open getattr }
+
+# Allow Knox analytics services
+allow base_typeattr_598 knox_analytics_proxy_service service_manager find
+allow base_typeattr_598 knox_analytics_service service_manager find
+
+# Allow Knox AI system service
+allow kfa_app knoxai_system_service service_manager find
+
+# Allow access to secure storage
+allow init secure_storage:process { siginh rlimitinh transition }
+allow secure_storage secure_storage_exec:file { read getattr map execute open entrypoint }
+
+# Optional - allow untrusted apps to see Knox custom service
+allow untrusted_app_all knoxcustom_service service_manager find
