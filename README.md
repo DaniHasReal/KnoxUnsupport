@@ -79,7 +79,7 @@ Whether it’s testing, logs, patching sepolicy, or faking attestation — I’d
 ## 🙏 Credits
 
 - Samsung, for making Knox too exclusive  
-- Me ([@DaniHasReal])  
+- Me([@DaniHasReal])  
 - ChatGPT (yes, really)  
 - Everyone on XDA who did the opposite of this
 
